@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SENG513 Dots And Boxes</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+
+<body>
+    <div id="game_page">
+        <div id="score_board_and_buttons">
+            <div id="score_board">
+                <h1>Dots And Boxes</h2>
+                <div id="scores">
+                    <span id="p1score">Player 1 Score: 0</span>
+                    <span id="p2score">Player 2 Score: 0</span>
+                    <span id="p3score">Player 3 Score: 0</span>
+                </div>
+            </div>
+            <div id="buttons">
+                <button class="customized_button" id="back_to_home">Home</button>
+                <button class="customized_button" id="restart">Restart</button>
+            </div>
+        </div>
+        <div id="canvas">
+            <canvas></canvas>
+        </div>
+    </div>
+
+    <div id="starting_page">
+        <h1>Dot and Boxes</h1>
+        <div class="customized_select">
+            <label for="gs">Choose the grid size:</label>
+            <select id="gs">
+                <option value="2">2 grids</option>
+                <option value="3">3 grids</option>
+                <option value="4">4 grids</option>
+                <option value="5">5 grids</option>
+            </select>
+        </div>
+        <br>
+        <button class="customized_button" id="start">Start</button>
+        <br>
+    </div>
+    <script src="scripts/jquery.min.js"></script>
+    <script src="scripts/game.js"></script>
+</body>
+
+</html>
